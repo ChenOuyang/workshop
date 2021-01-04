@@ -31,3 +31,4 @@ jobs:
 
     - name: Test all
       run: make test-all
+      if: matrix.os != 'windows-latest'
